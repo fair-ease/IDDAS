@@ -1,5 +1,4 @@
-@prefix ex: <https://fairease.eu/catalogs> .
-@prefix exdata: <https://fairease.eu/data> .
+@prefix faireasecatalogs: <https://fairease.eu/catalogs> .
 @prefix dap: <http://example.org/dap-example/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -33,23 +32,20 @@
     skos:prefLabel "Oceanographic geographical features" .
 
 #The main catalogue
-ex:FAIREASECatalog a dcat:Catalog ;
+faireasecatalogs:FAIREASECatalog a dcat:Catalog ;
     dct:title "FAIREASECatalog Catalog"@en ;
     rdfs:label "FAIREASECatalog Catalog"@en ;
     foaf:homepage <http://example.org/catalog> ;
     dct:publisher  <https://edmo.seadatanet.org/report/43> ;
     dct:language <http://id.loc.gov/vocabulary/iso639-1/en>  ;
     #Contains other catalogues
-    dcat:catalog ex:SDNCatalog, ex:CopernicusCatalog .
+    dcat:catalog <https://cdi.seadatanet.org/dcat/catalog> .
 
-#Describe each Catalogue with as much detail as FAIRE-EASE has and list their datasets. here I only include one dataset for SDN ex:MyDataset
+#Describe each Catalogue with as much detail as FAIRE-EASE has and list their datasets. here I only include one dataset for SDN
 <https://cdi.seadatanet.org/dcat/catalog> a dcat:Catalog ;
   rdfs:label "SeaDataNet Catalogue";
   dcat:dataset <https://cdi.seadatanet.org/report/3461077> .
- 
-ex:CopernicusCatalog a dcat:Catalog ;
-  rdfs:label "Copernicus Catalogue".
-  
+
 
 #Describing the main dataset
 <https://cdi.seadatanet.org/report/3461077> a dcat:Dataset, sdo:Dataset;
@@ -66,7 +62,7 @@ ex:CopernicusCatalog a dcat:Catalog ;
     dcat:theme <http://vocab.nerc.ac.uk/collection/P22/current/28/> ; 
     dct:issued "2019-11-12";
     dcat:distribution <https://cdi.seadatanet.org/report/3461077/distribution>;
-    dqv:hasQualityMeasurement ex:measurement1;
+    dqv:hasQualityMeasurement <https://cdi.seadatanet.org/measurement-1>;
     dct:publisher  <https://edmo.seadatanet.org/report/43>;
     dct:creator  <https://edmo.seadatanet.org/report/43> ;
 
@@ -165,20 +161,20 @@ dap:Activity1 a prov:Activity;
     dct:title "Distribution of the dataset using the CDI API (or Blue-Cloud)"@en ;
     #TODO: Describe the API Service so M2M can access it
     dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
-    dcat:accessService ex:subset-service-001 ;
+    dcat:accessService <https://cdi.seadatanet.org/subset-service-001>;
     dcat:byteSize "5120"^^xsd:nonNegativeInteger .
 
 #A service
-ex:subset-service-001
+<https://cdi.seadatanet.org/subset-service-001>
     rdf:type dcat:DataService ;
     dct:conformsTo <http://dcat.example.org/apidef/table/v2.2> ;
     dct:type <https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/invoke> ;
     dcat:endpointDescription <http://dcat.example.org/api/table-005/capability> ;
     dcat:endpointURL <http://dcat.example.org/api/table-001> ;
-    dcat:servesDataset ex:MyDataset .
+    dcat:servesDataset <https://cdi.seadatanet.org/report/3461077> .
 
 #The quality info here
-ex:measurement1 a dqv:QualityMeasurement ;
+<https://cdi.seadatanet.org/measurement-1> a dqv:QualityMeasurement ;
     dqv:isMeasurementOf  <https://vocab.nerc.ac.uk/collection/L27/current/SEADATANET_QC/> ;
     dqv:value "good"^^xsd:boolean .
 
