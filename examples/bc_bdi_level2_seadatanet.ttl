@@ -1,4 +1,5 @@
-@prefix ex: <http://fairease.eu/dataset/> .
+@prefix ex: <https://fairease.eu/catalogs> .
+@prefix exdata: <https://fairease.eu/data> .
 @prefix dap: <http://example.org/dap-example/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -42,9 +43,9 @@ ex:FAIREASECatalog a dcat:Catalog ;
     dcat:catalog ex:SDNCatalog, ex:CopernicusCatalog .
 
 #Describe each Catalogue with as much detail as FAIRE-EASE has and list their datasets. here I only include one dataset for SDN ex:MyDataset
-ex:SDNCatalog a dcat:Catalog ;
+<https://cdi.seadatanet.org/dcat/catalog> a dcat:Catalog ;
   rdfs:label "SeaDataNet Catalogue";
-  dcat:dataset ex:MyDataset.
+  dcat:dataset <https://cdi.seadatanet.org/report/3461077> .
  
 ex:CopernicusCatalog a dcat:Catalog ;
   rdfs:label "Copernicus Catalogue".
