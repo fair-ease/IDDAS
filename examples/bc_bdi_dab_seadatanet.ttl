@@ -1,5 +1,3 @@
-@prefix ex: <https://essi-lab.eu/dab/fair-ease/catalogs> .
-@prefix exdata: <https://essi-lab.eu/dab/fair-ease/datasets> .
 @prefix dap: <http://example.org/dap-example/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -64,15 +62,15 @@ rdfs:label "State Office for Agriculture, Environment and Rural Areas of Schlesw
 rdfs:label "German Oceanographic Datacentre".
 <http://inspire.ec.europa.eu/theme/of> a skos:Concept;
 skos:prefLabel "Oceanographic geographical features" .
-ex:seadatanet-open a dcat:Catalog ;
+<https://essi-lab.eu/dab/fair-ease/catalog/seadatanet-open> a dcat:Catalog ;
 rdfs:label "SeaDataNet - Open datasets";
-dcat:dataset exdata:sdn-open:urn:SDN:CDI:LOCAL:96-2537-96-ds01-4.
-exdata:sdn-open:urn:SDN:CDI:LOCAL:96-2537-96-ds01-4 a dcat:Dataset, sdo:Dataset;
+dcat:dataset <https://essi-lab.eu/dab/fair-ease/dataset/sdn-open%3Aurn%3ASDN%3ACDI%3ALOCAL%3A96-2537-96-ds01-4>.
+<https://essi-lab.eu/dab/fair-ease/dataset/sdn-open%3Aurn%3ASDN%3ACDI%3ALOCAL%3A96-2537-96-ds01-4> a dcat:Dataset, sdo:Dataset;
 dct:title "SeaDataNet - Biological oceanography from German Oceanographic Datacentre (PointOfContact; Data Distributor), State Office for Agriculture, Environment and Rural Areas of Schleswig Holstein  (Data Custodian), point observations";
 dct:description "SeaDataNet is the Pan-European infrastructure for marine and ocean data management and delivery services. It is supported by the EU under its Research Infrastructures programme. It  connects 40 National Oceanographic Data Centres (NODC's) and 50 other data centres from 35 countries, bordering the European seas and Atlantic Ocean. The centres are mostly part of major marine management and research organisations that are acquiring and managing a large collection of marine and ocean data from various disciplines. This includes major international organisations, ICES and IOC-IODE. The overall objective is provide overview and access to marine and oceanographic data and data-products from government and research institutes in Europe. SeaDataNet contributes to the implementation of the EU INSPIRE and Marine Strategy Framework Directives. It also plays a key role in the development and operation of the EU EMODNet initiative. The SeaDataNet infrastructure is fully operational and INSPIRE compliant. It includes a versatile SeaDataNet portal (https://www.seadatanet.org) that provides users with a range of metadata, data and data product access services as well as standards, tools and guides for good marine data management. The Common Data Index (CDI) data discovery and access service provides harmonised access to the large volumes of datasets that are managed by the connected data centres. The CDI service contains already references and gives access to more than 1,5 milllion marine and oceanographic datasets as managed by 90 data centres. These numbers are increasing regularly because of further data population and more connected data centres as part of SeaDataNet II, EMODnet and other EU projects. For inclusion in the SeaDataNet INSPIRE compliant CSW service, the CDI records (at granule level) have been aggregated into CDI collections by a combination of Discipline, Data Centre, and geometric type. Each CSW XML record therefore represents a large collection of individual metadata records and associated datasets. By following the specified URL to the SeaDataNet portal users can evaluate these metadata in detail and request access by downloading of interesting datasets via the shopping cart transaction system that is integrated in the SeaDataNet portal.";
 dct:identifier "urn:SDN:CDI:LOCAL:96-2537-96-ds01-4" ;
-dcat:distribution exdata:sdn-open:urn:SDN:CDI:LOCAL:96-2537-96-ds01-4-0 ;
-dcat:distribution exdata:sdn-open:urn:SDN:CDI:LOCAL:96-2537-96-ds01-4-1 ;
+dcat:distribution <https://essi-lab.eu/dab/fair-ease/dataset/sdn-open%3Aurn%3ASDN%3ACDI%3ALOCAL%3A96-2537-96-ds01-4/distribution/0> ;
+dcat:distribution <https://essi-lab.eu/dab/fair-ease/dataset/sdn-open%3Aurn%3ASDN%3ACDI%3ALOCAL%3A96-2537-96-ds01-4/distribution/1> ;
 prov:wasGeneratedBy exdata:Activitysdn-open:urn:SDN:CDI:LOCAL:96-2537-96-ds01-4-0;
 prov:wasGeneratedBy exdata:Activitysdn-open:urn:SDN:CDI:LOCAL:96-2537-96-ds01-4-1;
 prov:wasGeneratedBy exdata:Activitysdn-open:urn:SDN:CDI:LOCAL:96-2537-96-ds01-4-2;
@@ -195,7 +193,7 @@ prov:used <http://vocab.nerc.ac.uk/collection/L05/current/130/> .
 skos:prefLabel "CTD".
 <http://vocab.nerc.ac.uk/collection/L06/current/0/> a sosa:Platform;
 skos:prefLabel "unknown".
-exdata:sdn-open:urn:SDN:CDI:LOCAL:96-2537-96-ds01-4-0 a dcat:Distribution ;
+<https://essi-lab.eu/dab/fair-ease/dataset/sdn-open%3Aurn%3ASDN%3ACDI%3ALOCAL%3A96-2537-96-ds01-4/distribution/0> a dcat:Distribution ;
 dcat:accessURL <https://cdi.seadatanet.org/search?step=00896~0372537~04896~0114~020ds01~0610> ;
 dcat:accessService exdata:subset-service-1575433984.
 exdata:subset-service-1575433984
@@ -203,8 +201,8 @@ rdf:type dcat:DataService ;
 dct:type <https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/invoke> ;
 dcat:endpointDescription "Seadatanet CDI v5 portal website" ;
 dcat:endpointURL <https://cdi.seadatanet.org/search?step=00896~0372537~04896~0114~020ds01~0610> ;
-dcat:servesDataset exdata:sdn-open:urn:SDN:CDI:LOCAL:96-2537-96-ds01-4 .
-exdata:sdn-open:urn:SDN:CDI:LOCAL:96-2537-96-ds01-4-1 a dcat:Distribution ;
+dcat:servesDataset <https://essi-lab.eu/dab/fair-ease/dataset/sdn-open%3Aurn%3ASDN%3ACDI%3ALOCAL%3A96-2537-96-ds01-4> .
+<https://essi-lab.eu/dab/fair-ease/dataset/sdn-open%3Aurn%3ASDN%3ACDI%3ALOCAL%3A96-2537-96-ds01-4/distribution/1> a dcat:Distribution ;
 dcat:accessURL <https://geo-service.maris.nl/seadatanet/wms> ;
 dcat:accessService exdata:subset-service--588745607.
 exdata:subset-service--588745607
@@ -213,5 +211,5 @@ dct:conformsTo "urn:ogc:serviceType:WebMapService:1.1.1:HTTP" ;
 dct:type <https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/invoke> ;
 dcat:endpointDescription "WMS example url" ;
 dcat:endpointURL <https://geo-service.maris.nl/seadatanet/wms> ;
-dcat:servesDataset exdata:sdn-open:urn:SDN:CDI:LOCAL:96-2537-96-ds01-4 .
+dcat:servesDataset <https://essi-lab.eu/dab/fair-ease/dataset/sdn-open%3Aurn%3ASDN%3ACDI%3ALOCAL%3A96-2537-96-ds01-4> .
 
