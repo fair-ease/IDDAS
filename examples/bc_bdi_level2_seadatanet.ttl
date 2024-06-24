@@ -89,70 +89,41 @@ faireasecatalogs:FAIREASECatalog a dcat:Catalog ;
     prov:wasGeneratedBy dap:Activity1 .
 
 dap:Activity1 a prov:Activity;
-    prov:used <http://vocab.nerc.ac.uk/collection/L05/current/351/> ;
-    prov:used <http://vocab.nerc.ac.uk/collection/L05/current/134/> ;
-    prov:used <http://vocab.nerc.ac.uk/collection/L05/current/130/> ;
-    prov:used <http://vocab.nerc.ac.uk/collection/L05/current/350/> ;
-    prov:used <http://vocab.nerc.ac.uk/collection/L05/current/379/> ;
-    prov:used <http://vocab.nerc.ac.uk/collection/L05/current/124/> ;
-    prov:used <http://vocab.nerc.ac.uk/collection/L05/current/113/> ;
-    prov:used <http://vocab.nerc.ac.uk/collection/L05/current/123/> ;
-    prov:used <http://vocab.nerc.ac.uk/collection/L05/current/WPS/> ;
-    prov:used <http://vocab.nerc.ac.uk/collection/L05/current/122/> .
+    prov:used <http://vocab.nerc.ac.uk/collection/L05/current/351/>, <http://vocab.nerc.ac.uk/collection/L05/current/134/>, <http://vocab.nerc.ac.uk/collection/L05/current/130/>, <http://vocab.nerc.ac.uk/collection/L05/current/350/>, <http://vocab.nerc.ac.uk/collection/L05/current/379/>, <http://vocab.nerc.ac.uk/collection/L05/current/124/>, <http://vocab.nerc.ac.uk/collection/L05/current/113/>, <http://vocab.nerc.ac.uk/collection/L05/current/123/>, <http://vocab.nerc.ac.uk/collection/L05/current/WPS/>, <http://vocab.nerc.ac.uk/collection/L05/current/122/> .
+    prov:used <https://vocab.nerc.ac.uk/collection/L06/current/26/>;
         
 <http://vocab.nerc.ac.uk/collection/L05/current/351/> a sosa:Sensor, prov:Entity, skos:Concept;
     skos:prefLabel "dissolved gas sensors";
-    sosa:isHostedBy <https://vocab.nerc.ac.uk/collection/L06/current/26/> .
 
 <http://vocab.nerc.ac.uk/collection/L05/current/134/> a sosa:Sensor, prov:Entity, skos:Concept;
     skos:prefLabel "water temperature sensor";
-    sosa:isHostedBy <https://vocab.nerc.ac.uk/collection/L06/current/26/> .
 
 <http://vocab.nerc.ac.uk/collection/L05/current/130/> a sosa:Sensor, prov:Entity, skos:Concept;
     skos:prefLabel "CTD";
-    sosa:isHostedBy <https://vocab.nerc.ac.uk/collection/L06/current/26/> .
 
 <http://vocab.nerc.ac.uk/collection/L05/current/350/> a sosa:Sensor, prov:Entity, skos:Concept;
     skos:prefLabel "salinity sensor";
-    sosa:isHostedBy <https://vocab.nerc.ac.uk/collection/L06/current/26/> .
 
 <http://vocab.nerc.ac.uk/collection/L05/current/379/> a sosa:Sensor, prov:Entity, skos:Concept;
     skos:prefLabel "altimeters";
-    sosa:isHostedBy <https://vocab.nerc.ac.uk/collection/L06/current/26/> .
 
 <http://vocab.nerc.ac.uk/collection/L05/current/124/> a sosa:Sensor, prov:Entity, skos:Concept;
     skos:prefLabel "transmissometers";
-    sosa:isHostedBy <https://vocab.nerc.ac.uk/collection/L06/current/26/> .
 
 <http://vocab.nerc.ac.uk/collection/L05/current/113/> a sosa:Sensor, prov:Entity, skos:Concept;
     skos:prefLabel "fluorometers";
-    sosa:isHostedBy <https://vocab.nerc.ac.uk/collection/L06/current/26/> .
 
 <http://vocab.nerc.ac.uk/collection/L05/current/123/> a sosa:Sensor, prov:Entity, skos:Concept;
     skos:prefLabel "optical backscatter sensors";
-    sosa:isHostedBy <https://vocab.nerc.ac.uk/collection/L06/current/26/> .
 
 <http://vocab.nerc.ac.uk/collection/L05/current/WPS/> a sosa:Sensor, prov:Entity, skos:Concept;
     skos:prefLabel "water pressure sensors";
-    sosa:isHostedBy <https://vocab.nerc.ac.uk/collection/L06/current/26/> .
 
 <http://vocab.nerc.ac.uk/collection/L05/current/122/> a sosa:Sensor, prov:Entity, skos:Concept;
     skos:prefLabel "radiometers";
-    sosa:isHostedBy <https://vocab.nerc.ac.uk/collection/L06/current/26/> .
-
 
 <https://vocab.nerc.ac.uk/collection/L06/current/26/> a sosa:Platform;
     skos:prefLabel "lowered unmanned submersible";
-    sosa:hosts <http://vocab.nerc.ac.uk/collection/L05/current/351/> ;
-    sosa:hosts <http://vocab.nerc.ac.uk/collection/L05/current/134/> ;
-    sosa:hosts <http://vocab.nerc.ac.uk/collection/L05/current/130/> ;
-    sosa:hosts <http://vocab.nerc.ac.uk/collection/L05/current/350/> ;
-    sosa:hosts <http://vocab.nerc.ac.uk/collection/L05/current/379/> ;
-    sosa:hosts <http://vocab.nerc.ac.uk/collection/L05/current/124/> ;
-    sosa:hosts <http://vocab.nerc.ac.uk/collection/L05/current/113/> ;
-    sosa:hosts <http://vocab.nerc.ac.uk/collection/L05/current/123/> ;
-    sosa:hosts <http://vocab.nerc.ac.uk/collection/L05/current/WPS/> ;
-    sosa:hosts <http://vocab.nerc.ac.uk/collection/L05/current/122/> .
 
 
 ##Distribution
