@@ -104,7 +104,8 @@ sdo:variableMeasured [
     ] ;
 
   prov:wasGeneratedBy exdata:Activity1 .
-  exdata:Activity1 a prov:Activity;
+
+exdata:Activity1 a prov:Activity;
   prov:used <http://vocab.nerc.ac.uk/collection/L05/current/134/> ;
   #Suggestion to separate the sensor from the platform as we currently do not hold this info
   prov:used <http://vocab.nerc.ac.uk/collection/B76/current/B7600031/> .
