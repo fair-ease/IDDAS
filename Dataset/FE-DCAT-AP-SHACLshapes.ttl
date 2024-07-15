@@ -117,6 +117,9 @@ ex:DistributionShape
         sh:path dcat:mediaType ;
         sh:datatype xsd:anyURI ;
     ] , [
+        sh:path dcat:accessURL ;
+        sh:datatype xsd:anyURI ;
+    ] , [
         sh:path dcat:byteSize ;
         sh:datatype xsd:nonNegativeInteger ;
     ] , [
