@@ -147,5 +147,5 @@ dap:Activity1 a prov:Activity;
 #The quality info here
 <https://cdi.seadatanet.org/measurement-1> a dqv:QualityMeasurement ;
     dqv:isMeasurementOf  <https://vocab.nerc.ac.uk/collection/L27/current/SEADATANET_QC/> ;
-    dqv:value "good"^^xsd:boolean .
+    dqv:value "good"^^xsd:string .
 
