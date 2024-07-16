@@ -134,7 +134,7 @@ exdata:MyDataset-001-csv   a dcat:Distribution ;
 #The quality info here
 exdata:measurement1 a dqv:QualityMeasurement ;
 dqv:isMeasurementOf  <http://vocab.nerc.ac.uk/collection/L27/current/ARGO_QC/> ;
-dqv:value "good"^^xsd:boolean .
+dqv:value "good"^^xsd:string .
 
 #A service
 exdata:subset-service-001
